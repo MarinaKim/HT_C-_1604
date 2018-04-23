@@ -16,29 +16,39 @@ c) список студентов, родившихся после заданного года.
 	strcat(name, t);
 }*/
 
-class dates {
+//class dates {
+//private:
+//	int dd;
+//	int mm;
+//	int yy;
+//public:
+//void setDd(int date) {this->dd = date;}
+//void setMm(int month) {this->mm = month;}
+//void setYy(int year) {this->yy = year;}
+//int getDd(){ return dd; }
+//int getMm(){ return mm; }
+//int getYy(){ return yy; }
+//};
+class Students {
 private:
+	string sname;
+	string initials;
 	int dd;
 	int mm;
 	int yy;
-public:
-void setDd() {this->dd = 1 + rand() % 31;}
-void setMm() {this->mm = 1 + rand() % 12;}
-void setYy() {this->yy = 2001 + rand() % 15;}
-int getDd(){ return dd; }
-int getMm(){ return mm; }
-int getYy(){ return yy; }
-};
-class Students {
-private:
-	string name;
-	string surname;
-	string fathername;
-	dates date;
-	string adress;
+	
+	/*string adress;
 	string faculty;
-	int course;
-
+	int course;*/
 public:
-
+	void setSname(string sname) { this->sname = sname; }
+	void setInitials(string initials) { this->initials = initials; }
+	void setDd(int date) { this->dd = date; }
+	void setMm(int month) { this->mm = month; }
+	void setYy(int year) { this->yy = year; }
+	string getSname() { return sname; }
+	string getInitials() { return initials; }
+	int getDd() { return dd; }
+	int getMm() { return mm; }
+	int getYy() { return yy; }
 };
